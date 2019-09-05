@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+$(document).ready(function() {
   // jQuery("h1").click(function() {
   //   alert("This is a header.");
   // });
@@ -10,7 +10,16 @@ jQuery(document).ready(function() {
   // jQuery("img").click(function() {
   //   alert("This is an image.");
   // });
-  $("p").click(function() {
-    $("img").show();
-  });
+
+// Toggle Img Visibility (Display: __)
+  // $(".clickable").click(function() {
+  //   $("#walrus-showing").toggle();
+  //   $("#walrus-hidden").toggle();
+  // });
+
+// Toggle FadeIn and FadeOut
+  $(".clickable").click(function() {
+    $("#walrus-fadeIn").fadeToggle("slow");
+    $("#walrus-fadeOut").fadeToggle("fast");
+});
 });
